@@ -1,23 +1,30 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: payments
+  name:  product
   namespace: default
+  labels:
+    app:  product
 spec:
   selector:
     matchLabels:
-      app: payments
+      app: product
+  replicas: 1
   template:
     metadata:
       labels:
-        app: payments
+        app:  product
     spec:
       containers:
-      - name: payments
-        image: nginx:alpine
+      - name:  product
+        image:  nginx:latest
         resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
           limits:
-            memory: "100Mi"
-            cpu: "110m"
+            cpu: 100m
+            memory: 100Mi
+    
         ports:
-        - containerPort: 80
+        - containerPort:  80
