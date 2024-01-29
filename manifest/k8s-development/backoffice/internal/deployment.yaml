@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backoffice-internal
+spec:
+  selector:
+    matchLabels:
+      app: backoffice-internal
+  template:
+    metadata:
+      labels:
+        app: backoffice-internal
+    spec:
+      containers:
+      - name: backoffice-internal
+        image: httpd:alpine
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 80
