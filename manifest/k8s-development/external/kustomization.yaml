@@ -4,4 +4,3 @@ namespace: external
 
 resources:
 - namespace.yaml
-- external.yaml
