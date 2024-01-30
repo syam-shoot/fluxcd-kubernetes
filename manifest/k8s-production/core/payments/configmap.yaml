@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: payments
+data:
+  app_name: payments-svc
+  app_version: v1.0
