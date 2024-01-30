@@ -6,4 +6,3 @@ resources:
 - namespace.yaml
 - payments
 - products
-- auth-service
