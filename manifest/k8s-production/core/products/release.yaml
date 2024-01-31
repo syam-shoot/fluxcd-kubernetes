@@ -14,5 +14,5 @@ spec:
       interval: 1m
   releaseName: products
   values:
-    image: nginx:latest
+    image: aditirvan/webapp:4
     port: 80
