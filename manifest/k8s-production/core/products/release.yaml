@@ -15,4 +15,4 @@ spec:
   releaseName: products
   values:
     image: nginx:latest
-    port: 8080
+    port: 80
