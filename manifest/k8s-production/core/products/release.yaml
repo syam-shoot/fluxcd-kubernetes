@@ -6,7 +6,7 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: ./module/helm-application
+      chart: ../../../../module/helm-application/
       sourceRef:
         kind: GitRepository
         name: flux-system

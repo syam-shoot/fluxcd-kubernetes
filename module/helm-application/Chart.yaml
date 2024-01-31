@@ -1,4 +1,4 @@
 apiVersion: v2
-name: application
-description: Helm chart aplikasi kita
-version: "1.0"
+name: mychart
+description: A Helm chart for my application
+version: 0.1.0
