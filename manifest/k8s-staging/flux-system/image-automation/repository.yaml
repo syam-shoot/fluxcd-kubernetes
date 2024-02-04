@@ -4,5 +4,5 @@ metadata:
   name: product-baru
   namespace: flux-system
 spec:
-  image: vioifc/travellist:9
+  image: vioifc/travellist
   interval: 1m
