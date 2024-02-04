@@ -1,0 +1,8 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: product-baru
+  namespace: flux-system
+spec:
+  image: vioifc/travellist:9
+  interval: 1m
