@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - repository.yaml
   - policy.yaml
+  - image-update-automation.yaml
