@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: product-baru
+spec:
+  imageRepositoryRef:
+    name: product-baru
+  policy:
+    numerical:
+      order: asc
