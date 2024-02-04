@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: product-baru-svc
 spec:
+  type: LoadBalancer
   selector:
     app: product-baru-svc
   ports:
