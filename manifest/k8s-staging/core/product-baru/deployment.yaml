@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-baru
+spec:
+  selector:
+    matchLabels:
+      app: product-baru
+  template:
+    metadata:
+      labels:
+        app: product-baru
+    spec:
+      containers:
+      - name: product-baru
+        image: vioifc/travellist:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 3000

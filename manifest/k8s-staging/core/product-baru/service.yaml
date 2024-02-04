@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: product-baru-svc
+spec:
+  selector:
+    app: product-baru-svc
+  ports:
+  - name: product-baru-svc
+    protocol: TCP
+    port: 80
+    targetPort: 3000
+    
