@@ -1,12 +1,12 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
-  name: product-baru
+  name: flux-system
 spec:
   interval: 1m
   sourceRef:
     kind: GitRepository
-    name: product-baru
+    name: flux-system
   git:
     checkout:
       ref:
