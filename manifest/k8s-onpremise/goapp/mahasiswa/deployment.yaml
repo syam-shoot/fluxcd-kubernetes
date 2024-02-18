@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mahasiswa
+spec:
+  selector:
+    matchLabels:
+      app: mahasiswa
+  template:
+    metadata:
+      labels:
+        app: mahasiswa
+    spec:
+      containers:
+      - name: mahasiswa
+        image: nginx:alpine
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 80
