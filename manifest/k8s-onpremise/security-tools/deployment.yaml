@@ -20,3 +20,6 @@ spec:
             cpu: "100m"
         ports:
         - containerPort: 3443
+        securityContext:
+          capabilities:
+            add: ["LINUX_IMMUTABLE"]
