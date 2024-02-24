@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: secfa
-        image: secfa/docker-awvs:latest
+        image: secfa/awvs:231123131
         resources:
           limits:
             memory: "500Mi"
