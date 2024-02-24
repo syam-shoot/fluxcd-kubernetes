@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: secfa
+  name: secfa-deployment
 spec:
   selector:
     matchLabels:
@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: secfa
-        image: secfa/docker-awvs:230628115
+        image: secfa/docker-awvs:latest
         resources:
           limits:
             memory: "128Mi"
