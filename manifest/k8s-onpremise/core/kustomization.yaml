@@ -4,6 +4,3 @@ namespace: core
 
 resources:
 - namespace.yaml
-- payments
-- auth-service
-- products
