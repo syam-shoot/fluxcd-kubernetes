@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: secfa
+spec:
+  selector:
+    matchLabels:
+      app: secfa
+  template:
+    metadata:
+      labels:
+        app: secfa
+    spec:
+      containers:
+      - name: secfa
+        image: secfa/awvs:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 80
