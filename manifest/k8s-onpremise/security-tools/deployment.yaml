@@ -16,8 +16,8 @@ spec:
         image: secfa/docker-awvs:latest
         resources:
           limits:
-            memory: "128Mi"
-            cpu: "100m"
+            memory: "500Mi"
+            cpu: "1"
         ports:
         - containerPort: 3443
         securityContext:
