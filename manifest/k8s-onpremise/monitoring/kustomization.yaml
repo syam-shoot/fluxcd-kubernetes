@@ -5,6 +5,5 @@ namespace: monitoring
 resources:
 - namespace.yaml
 - ../../../module/helm-repository/grafana/grafana.yaml
-- ../../../module/helm-repository/prometheus/repository.yaml
 - grafana
-- prometheus
+
