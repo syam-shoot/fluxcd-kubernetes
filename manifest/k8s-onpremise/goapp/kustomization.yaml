@@ -3,6 +3,6 @@ kind: Kustomization
 namespace: goapp
 
 resources:
-- namespace.yaml
-- website
 - flux-system
+- website
+- namespace.yaml
