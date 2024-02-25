@@ -13,13 +13,10 @@ spec:
     spec:
       containers:
       - name: secfa
-        image: secfa/awvs:231123131
+        image: secfa/awvs:beta
         resources:
           limits:
             memory: "500Mi"
             cpu: "1"
         ports:
         - containerPort: 3443
-        securityContext:
-          capabilities:
-            add: ["LINUX_IMMUTABLE"]
