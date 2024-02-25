@@ -13,4 +13,4 @@ spec:
       interval: 5m
   releaseName: grafana-monitoring
   values:
-    replicas: 1
+    replicas: 2
