@@ -4,6 +4,8 @@ namespace: monitoring
 
 resources:
 - namespace.yaml
+- grafana
+- ../../../module/helm-repository/grafana/grafana.yaml
 - kiali
 - ../../../module/helm-repository/kiali/repository.yaml
 
