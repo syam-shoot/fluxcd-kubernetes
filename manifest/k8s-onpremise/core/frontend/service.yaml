@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: frontend-dashboard
 spec:
+  type: LoadBalancer
   selector:
     app: frontend-dashboard
   ports:

@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: products
 spec:
+  type: LoadBalancer
   selector:
     app: products
   ports:
