@@ -1,17 +1,17 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta2
 kind: HelmRelease
 metadata:
-  name: grafana-monitoring
+  name: kiali-monitoring
 spec:
   interval: 1m
   chart:
     spec:
-      chart: grafana
+      chart: kiali
       sourceRef:
         kind: HelmRepository
-        name: grafana
+        name: kiali
       interval: 5m
-  releaseName: grafana-monitoring
+  releaseName: kiali-monitoring
   values:
     replicas: 1
     service:
