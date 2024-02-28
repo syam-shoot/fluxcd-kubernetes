@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  customers
+spec:
+  selector:
+    matchLabels:
+      app: customers
+  template:
+    metadata:
+      labels:
+        app:  customers
+    spec:
+      containers:
+      - name:  customers
+        image:  aditirvan/istio-sample-app:customers-v1.0
+        resources:
+          limits:
+            cpu: 100m
+            memory: 100Mi
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort: 8080
