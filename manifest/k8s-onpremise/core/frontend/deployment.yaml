@@ -27,4 +27,4 @@ spec:
           - name: API_PRODUCT
             value: http://products.core.cluster.local/api/products
           - name: API_CUSTOMER
-            value: http://products.core.cluster.local/api/customers
+            value: http://customers.core.cluster.local/api/customers
