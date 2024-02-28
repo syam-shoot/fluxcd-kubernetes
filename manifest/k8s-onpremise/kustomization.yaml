@@ -8,3 +8,4 @@ resources:
 - flux-system
 - metal-lb
 - core
+- ingress-gateway
