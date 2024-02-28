@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: goapp
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: goapp
   ports:
