@@ -1,0 +1,23 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta2
+kind: HelmRelease
+metadata:
+  name: kiali
+  namespace: monitoring
+spec:
+  interval: 1m
+  chart:
+    spec:
+      chart: kiali-server
+      version: "<versi_chart>"
+      sourceRef:
+        kind: HelmRepository
+        name: kiali
+        namespace: monitoring
+      interval: 5m
+  values:
+    auth:
+      strategy: "anonymous"
+    viewOnlyMode: false
+    service:
+      type: LoadBalancer
+      port: 20001
