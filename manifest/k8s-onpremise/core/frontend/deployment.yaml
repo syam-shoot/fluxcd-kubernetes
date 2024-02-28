@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  frontend-dashboard
+spec:
+  selector:
+    matchLabels:
+      app: frontend-dashboard
+  template:
+    metadata:
+      labels:
+        app:  frontend-dashboard
+    spec:
+      containers:
+      - name:  frontend-dashboard
+        image:  aditirvan/istio-sample-app:dashboard
+        resources:
+          limits:
+            cpu: 100m
+            memory: 100Mi
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort: 8080
