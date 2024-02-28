@@ -1,7 +1,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta2
 kind: HelmRelease
 metadata:
-  name: kiali-monitoring
+  name: kiali
 spec:
   interval: 1m
   chart:
@@ -11,7 +11,7 @@ spec:
         kind: HelmRepository
         name: kiali
       interval: 5m
-  releaseName: kiali-monitoring
+  releaseName: kiali
   values:
     replicas: 1
     service:
