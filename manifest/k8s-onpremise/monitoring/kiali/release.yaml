@@ -15,5 +15,5 @@ spec:
   values:
     replicas: 1
     service:
-      type: LoadBalancer
-      port: 20001
+      type: NodePort
+      port: 80
