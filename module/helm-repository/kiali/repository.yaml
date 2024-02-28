@@ -5,4 +5,4 @@ metadata:
   namespace: monitoring
 spec:
   interval: 1m0s
-  url: module/helm-repository/grafana
+  url: https://kiali.org/helm-charts
