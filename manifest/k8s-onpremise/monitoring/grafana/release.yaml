@@ -3,7 +3,6 @@ kind: HelmRelease
 metadata:
   name: grafana-monitoring
 spec:
-  type: LoadBalancer
   interval: 1m
   chart:
     spec:
@@ -15,3 +14,4 @@ spec:
   releaseName: grafana-monitoring
   values:
     replicas: 1
+    type: LoadBalancer
