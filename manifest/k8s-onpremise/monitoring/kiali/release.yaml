@@ -16,4 +16,4 @@ spec:
     replicas: 1
     service:
       type: LoadBalancer
-      port: 20001
+      port: 80
