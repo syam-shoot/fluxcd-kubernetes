@@ -25,6 +25,6 @@ spec:
         - containerPort: 8080
         env:
           - name: API_PRODUCT
-            value: http://products/api/products
+            value: http://10.152.183.717/api/products
           - name: API_CUSTOMER
-            value: http://customers/api/customers
+            value: http://10.152.183.75/api/customers
