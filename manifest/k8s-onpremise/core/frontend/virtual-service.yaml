@@ -11,4 +11,4 @@ spec:
     - name: "dashboard"
       route:
       - destination:
-          host: frontend-dashboard.svc
+          host: frontend-dashboard.svc.core.cluster.local
