@@ -27,4 +27,4 @@ spec:
           - name: API_PRODUCT
             value: http://10.152.183.217/api/products
           - name: API_CUSTOMER
-            value: http://10.152.183.75/api/
+            value: http://10.152.183.75/api/customers
