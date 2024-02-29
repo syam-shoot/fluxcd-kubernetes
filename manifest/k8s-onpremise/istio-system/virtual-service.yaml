@@ -13,5 +13,3 @@ spec:
       route:
       - destination:
           host: 10.152.183.228
-          port:
-            number: 8080
