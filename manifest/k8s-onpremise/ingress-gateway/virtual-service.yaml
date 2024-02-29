@@ -7,7 +7,7 @@ spec:
   hosts:
   - "marketplace.local"
   gateways:
-  - hfrontend-gateway
+  - frontend-gateway
   http:
     - name: "dashboard"
       route:
