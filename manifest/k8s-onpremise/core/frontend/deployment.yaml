@@ -27,4 +27,4 @@ spec:
           - name: API_PRODUCT
             value: http://products/api/products
           - name: API_CUSTOMER
-            value: http://customers.core.svc.cluseter.local/api/customers
+            value: http://customers/api/customers
