@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: review-canary-3.0.0 # nama deployment beda
+  namespace: belajar-istio
+spec:
+  selector:
+    matchLabels:
+      type: canary-3.0.0 #tambahan label canary
+  template:
+    metadata:
+      labels:
+        type: canary-3.0.0 # tambahan label canary
+        app: review # match dengan label service
+        version: 3.0.0 # versi 3
+    spec:
+      containers:
+      - name: review
+        image: rahadiangg/demo-istio:review-svc-3.0.0 # versi 3
+        resources:
+          limits:
+            memory: "20Mi"
+            cpu: "20m"
+        ports:
+        - containerPort: 8000
+
