@@ -5,11 +5,11 @@ metadata:
   namespace: belajar-istio
 spec:
   hosts:
-  - sifood.belajar-istio.local # domain, umumnya diasamakan dengan hosts di Gateway
+  - sifood.belajar-istio.local
   gateways:
-    - "dashboard-gateway" # nama Gateway yang diingikan
+    - "dashboard-gateway" 
   http:
   - name: "dashboard-route"
     route:
     - destination:
-        host: dashboard.belajar-istio.svc.cluster.local # disarankan menggunakan format DNS full (FQDN)
+        host: dashboard.belajar-istio.svc.cluster.local

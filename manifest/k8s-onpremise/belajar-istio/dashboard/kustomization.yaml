@@ -3,3 +3,5 @@ kind: Kustomization
 
 resources:
   - dashboard-1.0.0.yaml
+  - dashboard-external-virtualService.yaml
+  - dashboard-gateway.yaml

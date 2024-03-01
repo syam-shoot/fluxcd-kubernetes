@@ -5,11 +5,11 @@ metadata:
   namespace: belajar-istio
 spec:
   selector:
-    istio: ingressgateway # ingress gateway yang ingin digunakan, karena kita bisa punya beberapa ingress gateway
+    istio: ingressgateway
   servers:
   - port:
       number: 80
       name: http
       protocol: HTTP
     hosts:
-    - "sifood.belajar-istio.local" # domain name https://istio.io/latest/docs/reference/config/networking/gateway/#Server
+    - "sifood.belajar-istio.local"
