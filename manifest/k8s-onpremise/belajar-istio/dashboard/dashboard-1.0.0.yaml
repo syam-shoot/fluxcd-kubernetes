@@ -27,9 +27,9 @@ spec:
         - containerPort: 3000
         env:
           - name: PRODUCT_URI
-            value: http://product/products
+            value: http://product:8000/products
           - name: REVIEW_URI
-            value: http://review/reviews
+            value: http://review:8000/reviews
 
 ---
 apiVersion: v1
