@@ -9,7 +9,11 @@ spec:
   gateways:
   - frontend-gateway
   http:
-    - name: "dashboard"
-      route:
-      - destination:
-          host: 10.152.183.228
+  - match:
+    - uri:
+        exact: /
+    route:
+    - destination:
+        host: frontend-dashboard.namespace.svc.cluster.local
+        port:
+          number: 8080
