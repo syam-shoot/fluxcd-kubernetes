@@ -5,8 +5,6 @@ metadata:
 spec:
   hosts:
   - "customers.core.svc.cluster.local"
-  gateways:
-  - frontend-gateway
   http:
   - name: "customers"
     route:
