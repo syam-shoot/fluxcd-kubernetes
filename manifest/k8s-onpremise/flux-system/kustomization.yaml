@@ -4,3 +4,4 @@ namespace: flux-system
 
 resources:
   - image-automation
+  - configmap-kubeproxy.yaml
