@@ -8,7 +8,7 @@ spec:
   gateways:
   - frontend-gateway
   http:
-  - name:
+  - name: "frontend"
     route:
     - destination:
         host: frontend-dashboard.core.svc.cluster.local
