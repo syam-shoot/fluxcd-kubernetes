@@ -10,6 +10,7 @@ spec:
     metadata:
       labels:
         app:  frontend-dashboard
+        version: "1.0"
     spec:
       containers:
       - name:  frontend-dashboard
