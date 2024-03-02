@@ -9,3 +9,4 @@ resources:
 - metal-lb
 - core
 - belajar-istio
+- kube-proxy
