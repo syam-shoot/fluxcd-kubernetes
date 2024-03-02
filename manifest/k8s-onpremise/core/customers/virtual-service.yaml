@@ -13,5 +13,10 @@ spec:
     - destination:
         host: customers.core.svc.cluster.local
         subset: v1
-      weight: 100
+      weight: 90
+
+    - destination:
+        host: customers.core.svc.cluster.local
+        subset: v2
+      weight: 10
 
