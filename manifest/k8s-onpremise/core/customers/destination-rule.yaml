@@ -11,3 +11,6 @@ spec:
   - name: v2
     labels:
       version: "2.0"
+  - name: v3
+    labels:
+      version: "3.0"
