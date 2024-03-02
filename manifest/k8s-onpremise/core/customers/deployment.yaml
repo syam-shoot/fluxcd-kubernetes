@@ -9,7 +9,8 @@ spec:
   template:
     metadata:
       labels:
-        app:  customers
+        app: customers
+        version: "1.0"
     spec:
       containers:
       - name:  customers

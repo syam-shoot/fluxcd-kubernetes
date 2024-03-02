@@ -1,7 +1,7 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
-  name: frontend-dashboard
+  name: customers
 spec:
   host: customers.core.svc.cluster.local
   subsets:

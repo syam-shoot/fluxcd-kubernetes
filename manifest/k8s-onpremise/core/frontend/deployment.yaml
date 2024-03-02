@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:  frontend-dashboard
+  name: frontend-dashboard
 spec:
   selector:
     matchLabels:
@@ -9,8 +9,7 @@ spec:
   template:
     metadata:
       labels:
-        app:  frontend-dashboard
-        version: "1.0"
+        app: frontend-dashboard
     spec:
       containers:
       - name:  frontend-dashboard
