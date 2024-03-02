@@ -9,9 +9,7 @@ spec:
   gateways:
   - frontend-gateway
   http:
-  - match:
-    - uri:
-        exact: /
+  - name:
     route:
     - destination:
         host: frontend-dashboard.namespace.svc.cluster.local
