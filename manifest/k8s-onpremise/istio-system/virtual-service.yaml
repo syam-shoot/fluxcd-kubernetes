@@ -15,5 +15,3 @@ spec:
     route:
     - destination:
         host: frontend-dashboard.namespace.svc.cluster.local
-        port:
-          number: 8080
