@@ -4,7 +4,6 @@ metadata:
   name: frontend-dashboard
 spec:
   host: customers.core.svc.cluster.local
-  
   subsets:
   - name: v1
     labels:
