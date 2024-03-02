@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: goapp
-        image: vioifc/travellist:17 # {"$imagepolicy": "flux-system:goapp"}
+        image: vioifc/travellist:18 # {"$imagepolicy": "flux-system:goapp"}
         resources:
           limits:
             memory: "128Mi"
