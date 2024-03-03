@@ -6,3 +6,5 @@ resources:
 - namespace.yaml
 - grafana
 - ../../../module/helm-repository/grafana/grafana.yaml
+- birnami
+- ../../../module/helm-repository/bitnami/bitnami.yaml
