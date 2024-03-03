@@ -16,10 +16,10 @@ spec:
     - destination:
         host: customers.core.svc.cluster.local
         subset: v2
-      weight: 0
+      weight: 5
 
     - destination:
         host: customers.core.svc.cluster.local
         subset: v3
-      weight: 10
+      weight: 5
 
