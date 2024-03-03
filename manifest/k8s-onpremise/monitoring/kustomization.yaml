@@ -4,5 +4,3 @@ namespace: monitoring
 
 resources:
 - namespace.yaml
-- prometheus
-- ../../../module/helm-repository/protheus/repository.yaml
