@@ -17,3 +17,8 @@ spec:
     service:
       type: LoadBalancer
       port: 80
+    server:
+  persistence:
+    enabled: true
+    size: 8Gi
+    storageClassName: persistentvolume-controller
