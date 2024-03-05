@@ -22,3 +22,15 @@ spec:
         enabled: true
         size: 8Gi
         storageClassName: persistentvolume-controller
+    persistentVolume:
+      enabled: true
+      name: persistentvolume-controller
+      capacity: 15Gi
+      accessModes:
+        - ReadWriteOnce
+      hostPath:
+        path: /prometheus/data
+    storageClass:
+      name: persistentvolume-controller
+      provisioner: kubernetes.io/no-provisioner
+      volumeBindingMode: WaitForFirstConsumer
