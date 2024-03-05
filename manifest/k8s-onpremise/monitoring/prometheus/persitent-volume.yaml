@@ -1,0 +1,5 @@
+server:
+  persistence:
+    enabled: true
+    size: 8Gi
+    storageClassName: persistentvolume-controller
