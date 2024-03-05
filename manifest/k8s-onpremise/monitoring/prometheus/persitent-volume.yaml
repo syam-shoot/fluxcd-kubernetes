@@ -1,5 +1,14 @@
-server:
-  persistence:
-    enabled: true
-    size: 8Gi
-    storageClassName: persistentvolume-controller
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: persistentvolume-controller
+spec:
+  capacity:
+    storage: 8Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: persistentvolume-controller
+  hostPath:
+    path: "/your/host/path"
