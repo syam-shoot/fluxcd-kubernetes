@@ -11,4 +11,4 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: persistentvolume-controller
   hostPath:
-    path: "/your/host/path"
+    path: /prometheus/data
