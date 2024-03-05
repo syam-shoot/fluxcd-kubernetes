@@ -12,3 +12,12 @@ spec:
   storageClassName: persistentvolume-controller
   hostPath:
     path: /prometheus/data
+
+---
+
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: persistentvolume-controller
+provisioner: kubernetes.io/no-provisioner
+volumeBindingMode: WaitForFirstConsumer
