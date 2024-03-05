@@ -6,5 +6,5 @@ resources:
 - namespace.yaml
 - grafana
 - ../../../module/helm-repository/grafana/grafana.yaml
-# - prometheus
-# - ../../../module/helm-repository/prometheus/repository.yaml
+- prometheus
+- ../../../module/helm-repository/prometheus/repository.yaml
