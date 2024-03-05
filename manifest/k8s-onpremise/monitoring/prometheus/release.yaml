@@ -21,4 +21,4 @@ spec:
       persistence:
         enabled: true
         size: 8Gi
-        storageClassName: prometheus-pv
+        storageClassName: persistentvolume-controller
