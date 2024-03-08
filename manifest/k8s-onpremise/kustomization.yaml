@@ -10,5 +10,3 @@ resources:
 - core
 - belajar-istio
 - kube-proxy
-- not-secure
-- istio-system
