@@ -6,4 +6,3 @@ resources:
 - namespace.yaml
 - grafana
 - ../../../module/helm-repository/grafana/grafana.yaml
-- metrics-kubernetes
