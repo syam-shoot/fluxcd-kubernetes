@@ -10,4 +10,3 @@ resources:
 - core
 - belajar-istio
 - kube-proxy
-- metrics-kubernetes
