@@ -11,3 +11,4 @@ resources:
 - belajar-istio
 - kube-proxy
 - metrics-kubernetes
+- istio-system
