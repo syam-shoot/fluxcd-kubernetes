@@ -4,4 +4,4 @@ namespace: hpa
 
 resources:
   - namespace.yaml
-  - deploment.yaml
+  - deployment.yaml
