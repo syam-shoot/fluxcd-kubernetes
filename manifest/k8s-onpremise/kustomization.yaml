@@ -12,3 +12,4 @@ resources:
 - kube-proxy
 - metrics-kubernetes
 - istio-system
+- hpa
