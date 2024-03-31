@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nodejs-web
-        image: nginx:alpine
+        image: khannedy/nodejs-web:latest
         resources:
           limits:
             memory: "128Mi"
