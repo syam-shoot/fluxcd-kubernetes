@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs-web
+  name: nginx
   labels:
-    name: nodejs-web
+    name: nginx
 spec:
   selector:
     matchLabels:
-      name: nodejs-web
+      name: nginx
   template:
     metadata:
-      name: nodejs-web
+      name: nginx
       labels:
-        name: nodejs-web
+        name: nginx
     spec:
       containers:
-      - name: nodejs-web
+      - name: nginx
         image: nginx:alpine
         resources:
           limits:
@@ -28,11 +28,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodejs-web-service
+  name: nginx-service
 spec:
   type: LoadBalancer
   selector:
-    name: nodejs-web
+    name: nginx
   ports:
     - port: 80
       targetPort: 80
@@ -50,7 +50,7 @@ spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: nodejs-web
+    name: nginx
   metrics:
     - type: Resource
       resource:
