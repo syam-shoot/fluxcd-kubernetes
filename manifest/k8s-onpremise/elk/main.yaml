@@ -14,15 +14,15 @@ spec:
 ---
 
 apiVersion: apps/v1
-kind: StatefulSet
+kind: Deployment
 metadata:
   name: elasticsearch
   namespace: elasticsearch
-  spec:
+spec:
   selector:
     matchLabels:
       app: elasticsearch
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
