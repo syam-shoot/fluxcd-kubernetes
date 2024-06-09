@@ -1,16 +1,17 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: elasticsearch-loadbalancer
-  namespace: elasticsearch
+  name: elasticsearch
+  namespace: elk
 spec:
-  type: ClusterIP
   ports:
     - port: 9200
-      targetPort: 9200
+      name: http
+    - port: 9300
+      name: transport
+  clusterIP: None
   selector:
     app: elasticsearch
-
 ---
 
 apiVersion: apps/v1
