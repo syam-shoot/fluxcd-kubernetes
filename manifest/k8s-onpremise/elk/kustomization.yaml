@@ -6,3 +6,4 @@ resources:
   - namespace.yaml
   - main.yaml
   - pvc.yaml
+  - service.yaml
