@@ -4,3 +4,5 @@ namespace: elasticsearch
 
 resources:
   - namespace.yaml
+  - main.yaml
+  - pvc.yaml
