@@ -4,3 +4,5 @@ namespace: elk
 
 resources:
   - namespace.yaml
+  - main.yaml
+  - storage.yaml
