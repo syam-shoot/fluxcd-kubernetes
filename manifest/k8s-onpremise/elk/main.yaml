@@ -50,5 +50,3 @@ spec:
         - name: elasticsearch-storage
           persistentVolumeClaim:
             claimName: elasticsearch-pvc
-
----
