@@ -19,7 +19,7 @@ metadata:
   name: elasticsearch
   namespace: elasticsearch
 spec:
-  serviceName: "elasticsearch"
+  serviceName: elasticsearch-loadbalancer
   replicas: 2
   selector:
     matchLabels:
