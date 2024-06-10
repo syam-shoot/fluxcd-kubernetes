@@ -4,3 +4,4 @@ namespace: elasticsearch
 
 resources:
   - namespace.yaml
+  - crds.yaml
