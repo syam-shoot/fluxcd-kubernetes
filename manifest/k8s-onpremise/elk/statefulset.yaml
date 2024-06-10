@@ -7,7 +7,7 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-     app: elasticsearch
+      app: elasticsearch
   template:
     metadata:
       labels:
@@ -20,39 +20,44 @@ spec:
           securityContext:
             runAsUser: 0
           volumeMounts:
-          - name: data
-            mountPath: /usr/share/elasticsearch/data
+            - name: data
+              mountPath: /usr/share/elasticsearch/data
       containers:
-      - name: elasticsearch
-        image: elasticsearch:8.14.0
-        ports:
-        - containerPort: 9200
-          name: http
-        - containerPort: 9300
-          name: transport
-        volumeMounts:
-        - name: data
-          mountPath: /usr/share/elasticsearch/data
-        env:
-        - name: cluster.name
-          value: "elasticsearch-cluster"
-        - name: node.name
-          valueFrom:
-            fieldRef:
-              fieldPath: metadata.name
-        - name: discovery.seed_hosts
-          value: "elasticsearch-0.elasticsearch,elasticsearch-1.elasticsearch"
-        - name: cluster.initial_master_nodes
-          value: "elasticsearch-0,elasticsearch-1"
-        - name: bootstrap.memory_lock
-          value: "true"
-        - name: ES_JAVA_OPTS
-          value: "-Xms512m -Xmx512m"
+        - name: elasticsearch
+          image: docker.elastic.co/elasticsearch/elasticsearch:8.4.0
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "100m"
+          ports:
+            - containerPort: 9200
+              name: http
+            - containerPort: 9300
+              name: transport
+          volumeMounts:
+            - name: data
+              mountPath: /usr/share/elasticsearch/data
+          env:
+            - name: cluster.name
+              value: "elasticsearch-cluster"
+            - name: node.name
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: discovery.seed_hosts
+              value: "elasticsearch-0.elasticsearch,elasticsearch-1.elasticsearch"
+            - name: cluster.initial_master_nodes
+              value: "elasticsearch-0,elasticsearch-1"
+            - name: bootstrap.memory_lock
+              value: "true"
+            - name: ES_JAVA_OPTS
+              value: "-Xms512m -Xmx512m"
   volumeClaimTemplates:
-  - metadata:
-      name: data
-    spec:
-      accessModes: [ "ReadWriteOnce" ]
-      resources:
-        requests:
-          storage: 1Gi
+    - metadata:
+        name: data
+      spec:
+        accessModes: [ "ReadWriteOnce" ]
+        resources:
+          requests:
+            storage: 1Gi
+        storageClassName: manual
