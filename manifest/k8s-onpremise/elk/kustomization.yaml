@@ -4,6 +4,6 @@ namespace: elasticsearch
 
 resources:
   - namespace.yaml
-  - main.yaml
+  - statefulset.yaml
   - pvc.yaml
   - service.yaml
